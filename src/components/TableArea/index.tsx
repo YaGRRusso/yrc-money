@@ -12,10 +12,10 @@ export const TableArea = ({ list }: Props) => {
         <C.Table>
             <thead>
                 <tr>
-                    <C.TableHeadColumn width={120}>Data</C.TableHeadColumn>
-                    <C.TableHeadColumn width={130}>Categoria</C.TableHeadColumn>
+                    <C.TableHeadColumn width={140}>Categoria</C.TableHeadColumn>
                     <C.TableHeadColumn>Titulo</C.TableHeadColumn>
-                    <C.TableHeadColumn width={100}>Valor</C.TableHeadColumn>
+                    <C.TableHeadColumn width={160}>Valor</C.TableHeadColumn>
+                    <C.TableHeadColumn width={120}>Data</C.TableHeadColumn>
                 </tr>
             </thead>
             <tbody>

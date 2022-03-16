@@ -2,7 +2,7 @@ import { ItemType } from './../types/ItemType';
 
 export const getCurrentMonth = () => {
     let now = new Date();
-    return `${now.getFullYear()}-${now.getMonth() - 1}`
+    return `${now.getFullYear()}-${now.getMonth() + 1}`
 }
 
 export const filterListByMonth = (list: ItemType[], date: string): ItemType[] => {
@@ -10,7 +10,7 @@ export const filterListByMonth = (list: ItemType[], date: string): ItemType[] =>
     let [year, month] = date.split('-')
 
     for (let i in list) {
-        if (list[i].date.getFullYear() === parseInt(year) && list[i].date.getMonth() - 2 === parseInt(month)) {
+        if (list[i].date.getFullYear() === parseInt(year) && list[i].date.getMonth() === parseInt(month)) {
             newList.push(list[i])
         }
     }
@@ -26,3 +26,11 @@ export const formatDate = (date: Date): string => {
     return `${addZeroDate(day)}/${addZeroDate(month)}/${year}`
 }
 const addZeroDate = (n: number) => n < 10 ? `0${n}` : `${n}`
+
+export const formatMonth = (month: string): string => {
+    let [year, mon] = month.split('-');
+    let months = [
+        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+    ]
+    return `${months[parseInt(mon) - 1]} - ${year}`
+}

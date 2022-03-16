@@ -27,3 +27,11 @@ export const HeaderText = styled.h1`
 export const Body = styled.div`
   margin: auto;
 `
+
+export const Footer = styled.footer`
+  color: #fff;
+  background-color: ${primaryColor};
+  margin-top: 50px;
+  padding: 30px 0;
+  text-align: center;
+`
