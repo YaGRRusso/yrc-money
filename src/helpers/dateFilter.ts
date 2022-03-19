@@ -18,6 +18,7 @@ export const filterListByMonth = (list: ItemType[], date: string): ItemType[] =>
     return newList
 }
 
+const addZeroDate = (n: number) => n < 10 ? `0${n}` : `${n}`
 export const formatDate = (date: Date): string => {
     let year = date.getFullYear()
     let month = date.getMonth()
@@ -25,12 +26,9 @@ export const formatDate = (date: Date): string => {
 
     return `${addZeroDate(day)}/${addZeroDate(month)}/${year}`
 }
-const addZeroDate = (n: number) => n < 10 ? `0${n}` : `${n}`
 
-export const formatMonth = (month: string): string => {
-    let [year, mon] = month.split('-');
-    let months = [
-        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
-    ]
-    return `${months[parseInt(mon) - 1]} - ${year}`
+export const formatCurrentMonth = (currentMonth: string): string => {
+    let [year, month] = currentMonth.split('-');
+    let months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    return `${months[parseInt(month) - 1]} - ${year}`
 }
