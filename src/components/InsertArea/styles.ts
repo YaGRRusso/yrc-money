@@ -9,6 +9,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @media (max-width: 540px){
+        flex-direction: column;
+    }
 `
 
 export const Field = styled.div`
@@ -16,6 +20,10 @@ export const Field = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 540px){
+        width: 100%;
+    }
 
     span{
         font-weight: 500;

@@ -10,7 +10,7 @@ type Props = {
 export const TableItem = ({ data }: Props) => {
     return (
         <C.TableLine>
-            <C.TableColumn>
+            <C.TableColumn className='categoryCol'>
                 <C.Category color={categories[data.category].color}>
                     {categories[data.category].title}
                 </C.Category>

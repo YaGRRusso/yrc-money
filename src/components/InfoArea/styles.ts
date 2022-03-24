@@ -9,6 +9,10 @@ export const Box = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 900px){
+        flex-direction: column;
+    }
 `
 
 export const MonthArea = styled.div`
@@ -32,4 +36,13 @@ export const ResumeArea = styled.div`
     justify-content: space-evenly;
     flex: 1;
     margin-left: 30px;
+
+    @media (max-width: 900px){
+        width: 100%;
+        margin-left: 0;
+    }
+
+    @media (max-width: 540px){
+        flex-direction: column;
+    }
 `

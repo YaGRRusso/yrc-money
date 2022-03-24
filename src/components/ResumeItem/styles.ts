@@ -5,6 +5,11 @@ export const Container = styled.div<{ color?: string }>`
     justify-content: center;
     flex-direction: column;
 
+    @media (max-width: 900px){
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
     p{
         margin: 0;
         color: #555;

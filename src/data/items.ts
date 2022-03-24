@@ -23,7 +23,7 @@ export const items: ItemType[] = [
     { date: new Date(2022, 3, 7), category: 'food', title: 'Rancho', value: 927.50 },
     { date: new Date(2022, 3, 8), category: 'rent', title: 'Água', value: 127.30 },
     { date: new Date(2022, 3, 9), category: 'rent', title: 'Energia', value: 210.45 },
-    { date: new Date(2022, 3, 4), category: 'salary', title: 'Freelance', value: 922 },
+    { date: new Date(2022, 3, 4), category: 'salary', title: 'Freelance mutio legal bah valeu muito a pena show de bola top', value: 922 },
     { date: new Date(2022, 3, 20), category: 'travel', title: 'Praia', value: 324.60 },
     { date: new Date(2022, 3, 22), category: 'food', title: 'Rancho', value: 264.90 },
 

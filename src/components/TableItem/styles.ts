@@ -1,14 +1,22 @@
 import styled from 'styled-components'
 
 export const TableLine = styled.tr`
- :last-child{
-    border-bottom: none;
- }
+
 `
 
 export const TableColumn = styled.td`
     padding: 10px 0;
     border-bottom: 1px solid #00000015;
+    padding-right: 20px;
+
+    @media (max-width: 540px){
+        font-size: 13px;
+        
+        .categoryCol{
+            display: none;
+        }
+    }
+
 `
 
 export const Category = styled.div<{ color: string }>`
